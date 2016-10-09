@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASLzZIr1yDOY65IRtWzNvgUJCET7XHdeI">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: { lat: 32.046051, lng: 35.851612},
+          zoom: 8
+        };
+        var map = new google.maps.Map(document.getElementById('map-canvas'),
+            mapOptions);
+        var Haifa = new google.maps.LatLng(32.7940463 , 34.98957100000007);
+        var TelAviv = new google.maps.LatLng (32.0853 , 34.781768);
+        var Aco = new google.maps.LatLng(32.933052 , 35.082678);
+        var Reshon = new google.maps.LatLng( 31.9730015 , 34.792501300000026);
+        var BeerSheva = new google.maps.LatLng(31.252973  ,  34.791462);
+        var Marker1 = new google.maps.Marker({
+            position:Haifa,
+            map: map,
+            animation:google.maps.Animation.BOUNCE
+        });
+        var Marker2 = new google.maps.Marker({
+            position:TelAviv,
+            map: map,
+            animation:google.maps.Animation.BOUNCE
+        });
+        var Marker3 = new google.maps.Marker({
+            position:Aco,
+            map: map,
+            animation:google.maps.Animation.BOUNCE
+        });
+        var Marker4 = new google.maps.Marker({
+            position:Reshon,
+            map: map,
+            animation:google.maps.Animation.BOUNCE
+        });
+        var Marker5 = new google.maps.Marker({
+            position:BeerSheva,
+            map: map,
+            animation:google.maps.Animation.BOUNCE
+        });
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+  <body bgcolor="Black">
+  <h2 style="margin-left: 300px; color: yellow;">{Welcome To My Israel Google Map Stations Cities}</h2>
+     <h4 style="margin-left: 200px;	color: red;">(Author :Taa"r Mosa , ID:201227626 ,Israel University Of Haifa , Java OOP Course,
+    Lecturer:Leior Limoned ,Teaching Assistant :Shahaf Hazan) 
+</h4>
+<p style="color: white; width: 200; margin-left: 20; margin-top: 30">Israel Railways Company Ltd.
+ , doing business as Israel Railways (
+  Rakevet Yisra'el,ý) is the state-owned principal railway company responsible
+   for all inter-city, commuter, and freight rail transport in Israel. All its lines are standard gauge.
+    The network is centered in Israel's densely populated coastal plain, from which lines radiate out in many directions.
+     Unlike road vehicles and city trams, Israeli railway trains run on the left hand tracks, matching neighboring Egypt
+      and other Middle Eastern countries, whose formerly connected rail networks were constructed by British engineers. 
+ The head office is located at the Tel Aviv Savidor Central Railway Station in Tel Aviv. </p>
+    <div id="map-canvas" style="margin-left:300px; width: 800px;height: 600px;"></div>
+ 
+
+  </body>
+</html>
